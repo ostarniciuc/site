@@ -7,19 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var tutorials_component_1 = require("./tutorials.component");
-var AppComponent = (function () {
-    function AppComponent() {
+var TutorialsComponent = (function () {
+    function TutorialsComponent() {
+        this.title = "Tutorials from chisinau";
     }
-    return AppComponent;
+    return TutorialsComponent;
 }());
-AppComponent = __decorate([
+TutorialsComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "<h1>Hello World from Chisinau <Header></Header> </h1>\n             <h4> Header 4 form App Component </h4>\n              <my-tutorials></my-tutorials>",
-        styles: ["h4 {\n        color: darkslategrey;\n       }"],
-        directives: [tutorials_component_1.TutorialsComponent]
+        selector: 'my-tutorials',
+        template: "<h2> {{title}} </h2>\n                  <input type=\"text\" [(ngModel)]=\"fname\" />\n                  <input type=\"text\" [(ngModel)]=\"lname\" />\n                    FullName: {{fname}} {{lname}}\n            "
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], TutorialsComponent);
+exports.TutorialsComponent = TutorialsComponent;
+//# sourceMappingURL=tutorials.component.js.map

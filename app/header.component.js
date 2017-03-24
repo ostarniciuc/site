@@ -7,19 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var tutorials_component_1 = require("./tutorials.component");
-var AppComponent = (function () {
-    function AppComponent() {
+var HeaderComponent = (function () {
+    function HeaderComponent() {
     }
-    return AppComponent;
+    return HeaderComponent;
 }());
-AppComponent = __decorate([
+HeaderComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "<h1>Hello World from Chisinau <Header></Header> </h1>\n             <h4> Header 4 form App Component </h4>\n              <my-tutorials></my-tutorials>",
-        styles: ["h4 {\n        color: darkslategrey;\n       }"],
-        directives: [tutorials_component_1.TutorialsComponent]
+        selector: 'Header',
+        template: '<h2>  header </h2>'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], HeaderComponent);
+exports.HeaderComponent = HeaderComponent;
+//# sourceMappingURL=header.component.js.map
